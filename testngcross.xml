@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="9" parallel="tests">
+	<parameter name ="product" value="shoes"/>
+	<test name="Testfor">
+
+		<classes>
+			<class name="org.sam.ClassA">
+				<parameter name="browser" value="chrome" />
+				
+			</class>
+		</classes>
+	</test>
+	<test name="Testfor1">
+		<classes>
+			<class name="org.sam.ClassA">
+				<parameter name="browser" value="firefox" />
+			</class>
+
+		</classes>
+	</test>
+	<test name="Testfor2">
+		<classes>
+			<class name="org.sam.ClassA">
+				<parameter name="browser" value="edge" />
+			</class>
+
+
+		</classes>
+	</test>
+
+
+
+</suite> 
